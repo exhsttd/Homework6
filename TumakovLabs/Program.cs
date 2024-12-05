@@ -16,7 +16,7 @@ namespace Laba
             Console.WriteLine("Упражнение 7.1-3");
             BankAcc.Account account = new BankAcc.Account(6789123.00m, BankAcc.Type.Текущий);
             account.GetAccountDetails();
-
+            
             Console.WriteLine("Что вы хотите сделать?");
             Console.WriteLine("1) Положить деньги на счет");
             Console.WriteLine("2) Снять деньги со счета");
@@ -59,7 +59,7 @@ namespace Laba
             foreach (Building building in buildings)
             {
                 building.GetBuildingDetails();
-
+                
                 Console.WriteLine($"Высота этажа: {building.CalculateFloorHeight()} метров");
                 Console.WriteLine($"Квартир в подъезде: {building.CalculateFlatInParadnie()}");
                 Console.WriteLine($"Квартир на этаже: {building.CalculateFlatPerFloor()}");
